@@ -5,7 +5,7 @@
     font-family: 'poppins', sans-serif;
 }
 
-.app{
+.app {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -14,7 +14,9 @@
     height: 75vh;
 }
 
-.time-select, .sound-picker,.player-container{
+.time-select,
+.sound-picker,
+.player-container {
     height: 80%;
     flex: 1;
     display: flex;
@@ -27,23 +29,23 @@
     position: relative;
 }
 
-.player-container svg{
+.player-container svg {
     position: absolute;
     height: 50%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(-90deg);
+    transform: translate(-50%, -50%) rotate(-90deg);
     pointer-events: none;
 }
 
-.time-display{
+.time-display {
     position: absolute;
     bottom: 5%;
     color: white;
     font-size: 50px;
 }
 
-video{
+video {
     position: fixed;
     left: 0%;
     top: 24vh;
@@ -52,7 +54,7 @@ video{
 }
 
 .time-select button,
-.sound-picker button{
+.sound-picker button {
     font-weight: 100;
     color: white;
     width: 30%;
@@ -60,7 +62,7 @@ video{
     background: none;
     border: 1px solid white;
     cursor: pointer;
-    border-radius: 5px;        
+    border-radius: 5px;
     font-size: 20px;
     transition: all 0.3s ease;
 }
@@ -80,11 +82,11 @@ video{
     padding: 30px;
 }
 
-.sound-picker button:hover{
+.sound-picker button:hover {
     background: teal;
 }
 
-.sound-picker button img{
+.sound-picker button img {
     height: 100%;
 }
 
@@ -94,18 +96,14 @@ video{
     top: 20px;
 }*/
 
-.logo{
-}
-
-.logo img{
-
+.logo img {
     width: 135px;
     height: auto;
     margin-left: 45%;
-    position:absolute;
+    position: absolute;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -120,10 +118,10 @@ body{
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.7s;
-    font-weight:200;
+    font-weight: 200;
 }
 
-.nav a{
+.nav a {
     display: block;
     padding: 20px 30px;
     font-size: 30px;
@@ -131,51 +129,61 @@ body{
     color: white;
 }
 
-.nav a:hover{
+.nav a:hover {
     color: lightcoral;
     transition: 0.4s;
 }
 
-#welcome-text{
-    margin-left: 28%;
+#welcome-text {
     padding-top: 8vh;
+    display: flex;
+    justify-content: center;
     color: white;
     font-size: 50px;
 }
 
 #links {
-    position:relative;
-    margin-left: 38%;
+    position: relative;
     margin-top: 20px;
     font-size: 25px;
+    display: flex;
+    justify-content: center;
 }
 
-#links a{
+#links a {
     text-decoration: none;
     color: white;
 }
 
-#links a:hover{
+#links a:hover {
     color: lightcoral;
     transition: 0.4s;
 }
 
-.block-2{
-    height: 5vh;
+.block-2 {
+    height: 4vh;
     background-color: white;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.block-3{
-    margin-top: 120px;
+.block-3 {
+    top: 120px;
     position: relative;
-    height: 76vh;
+    height: 85vh;
     background-color: teal;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0 100px;
+    text-align: left;
 }
 
-.nav .close{
+.nav .close {
     position: absolute;
-    top: 30px;;
-    right:0px;
+    top: 30px;
+    ;
+    right: 0px;
     margin-left: 50px;
     font-size: 30px;
 }
@@ -190,126 +198,138 @@ body{
     padding: 50px 30px;
 }
 
-.slide a{
+.slide a {
     color: teal;
     font-size: 30px;
 }
 
-.slide a:hover{
+.slide a:hover {
     color: lightcoral;
     transition: 0.4s;
 }
 
-#why-heading{
+#why-heading {
     color: white;
-text-align: center;
-padding: 8vh;
+    text-align: center;
+    padding: 50px;
+    margin-top: 0;
 }
 
-#why-heading:hover{
+#why-heading:hover {
     color: lightcoral;
     transition: 0.4s;
 }
 
-#why{
+#why {
     color: white;
-    margin-left: 100px;
-    margin-right: 80px;
     margin-top: 0px;
     font-size: 18px;
     font-weight: 200;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-#why a{
+#why p {
+    text-align: center;
+}
+
+#why button {
+    width: 100%;
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+#why a {
     text-align: center;
     text-decoration: none;
     color: white;
-}
-#why p{
-    text-align: center;
-}
-
-#why button{
+    display: flex;
+    justify-content: center;
+    
     font-weight: 100;
     width: 18%;
-    height: 10%;
     background: none;
     border: 1px solid white;
     cursor: pointer;
-    border-radius: 10px;        
+    border-radius: 50px;
     font-size: 25px;
     transition: all 0.3s ease;
     margin-top: 30px;
-    margin-left: 40%;
     font-weight: bold;
 }
 
-#why button:hover{
+#why a:hover {
     background: lightcoral;
 }
 
-#butt-home a{
+
+#butt-home {
+    display: flex;
+    justify-content: center;
+}
+
+
+#butt-home a:hover {
+    background: lightcoral;
+}
+
+#butt-home a {
     text-align: center;
     text-decoration: none;
     color: white;
-}
-#butt-home button:hover{
-    background: lightcoral;
-}
-
-#butt-home button{
     font-weight: 100;
     width: 30%;
-    height: 10%;
-    background: none;
+    background: transparent;
     border: 1px solid white;
     cursor: pointer;
-    border-radius: 10px;        
+    border-radius: 50px;
     font-size: 50px;
     transition: all 0.3s ease;
     margin-top: 60px;
-    margin-left: 35%;
     font-weight: bold;
 }
 
-.credits{
+.credits {
     margin-left: 85%;
-    margin-top: 7% ;
+    margin-top: 7%;
 }
 
-.credits a{
+.credits a {
     text-decoration: none;
     color: white;
 }
 
-.credits a:hover{
+.credits a:hover {
     color: lightcoral;
 }
 
-.credits-app{
+.credits-app {
     margin-left: 85%;
-    margin-top:-2% ;
+    margin-top: -2%;
 }
 
-.credits-app a{
+.credits-app a {
     text-decoration: none;
     color: white;
 }
 
-.credits-app a:hover{
+.credits-app a:hover {
     color: turquoise;
 }
 
-.credits-why{
+.credits-why {
     margin-left: 85%;
-    margin-top: 0.5% ;
+    margin-top: 0.5%;
 }
 
-.credits-why a{
+.credits-why a {
     text-decoration: none;
     color: white;
 }
 
-.credits-why a:hover{
+.credits-why a:hover {
     color: lightcoral;
 }
